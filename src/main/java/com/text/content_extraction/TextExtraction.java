@@ -4,10 +4,10 @@ import org.apache.tika.Tika;
 
 import java.io.File;
 
-public class textExtraction {
+public class TextExtraction {
     public static void main(String[] args) {
         Tika tika = new Tika();
-        File file = new File("TestSanitize.docx");
+        File file = new File("TestSanitizeWithImage.docx");
         try {
             String text = tika.parseToString(file);
             System.out.println("Extracted Text :\n"+ text);
